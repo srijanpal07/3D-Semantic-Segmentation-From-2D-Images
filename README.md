@@ -1,11 +1,13 @@
 # 3D Semantic Reconstruction from 2D images: A COLMAP - UNet Fusion with Voting
 
-CSCI 5561: Computer Vision Final Project
-Advisor: Prof. Volkan Isler (University of Minnesota)
-Team: Amitabha, Srijan, Roozbeh, Tejasvi
+CSCI 5561: Computer Vision (Final Project)
+
+Advisor: Prof. Volkan Isler (University of Minnesota, CSE)
+
+Team: Amitabha Deb, Srijan Pal, Roozbeh Eshani, Tejasvi Bansal
 
 ### Introduction
-In this project, we conducted a 3D reconstruction of an environment while preserving the semantic information. We constructed a pipeline from 2D semantic labels and 3D reconstructed points to estimate 3D semantic reconstruction. Our methodology involves the generation of 3D sparse and dense point clouds using COLMAP, extraction of the segmentation masks using U-Net from the images provided, and finally employing a voting mechanism paired with a k-means algorithm to perform 3d semantic reconstruction.
+We developed a method to reconstruct 3D scenes from 2D images while preserving semantic information. Using COLMAP, we generated sparse and dense 3D point clouds from the images. We designed and trained a custom U-Net-based CNN architecture to segment the images. By combining segmentation data with the 3D point cloud using a voting algorithm, we achieved accurate 3D semantic scene reconstruction. Our approach offers a novel way to understand and interpret 3D environments from 2D imagery.
 
 ![image1](https://github.com/srijanpal07/3D-Semantic-Segmentation-From-2D-Images/blob/main/1.png)
 
